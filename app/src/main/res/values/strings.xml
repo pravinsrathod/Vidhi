@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ListViewWithBaseAdapter</string>
+    <string name="your_cellphone_number">Enter Cellphone Number</string>
+    <string name="phone_number_hint">8087796907</string>
+    <string name="action_send_normal_sms">normal_sms</string>
+    <string name="action_send_condition_sms">condition_sms</string>
+    <string name="error_invalid_phone_number">Invalid Phone Number</string>
+    <string name="permission_alert_dialog_title">Permissions Required</string>
+    <string name="permission_dialog_message">Please Provide SMS Permission</string>
+    <string name="action_ok">Ok</string>
+    <string name="toast_sending_sms">Sending sms....</string>
+
+    <string-array name="items_name">
+        <item>MacBook Pro</item>
+        <item>Alienware</item>
+        <item>Sony play station 4</item>
+        <item>Xbox One</item>
+        <item>Google glass</item>
+        <item>Google Nexus 6</item>
+    </string-array>
+
+    <string-array name="item_description">
+        <item>MacBook pro with new graphics and faster flash storage.</item>
+        <item>High performance computer gaming system.</item>
+        <item>PS4 console, the most immersive gaming experience ever.</item>
+        <item>Best games, multi-player and entertainment.</item>
+        <item>Optical head mounted display</item>
+        <item>Motorolla Nexus x</item>
+    </string-array>
+
+    <string-array name="item_Details">
+        <item>MacBook pro Details</item>
+        <item>High performance computer gaming system Details.</item>
+        <item>PS4 console, the most immersive gaming experience ever Details.</item>
+        <item>Best games, multi-player and entertainment Details.</item>
+        <item>Optical head mounted display Details</item>
+        <item>Motorolla Nexus x Details</item>
+    </string-array>
+</resources>
