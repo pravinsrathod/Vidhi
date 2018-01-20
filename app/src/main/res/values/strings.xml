@@ -1,39 +1,293 @@
 <resources>
-    <string name="app_name">ListViewWithBaseAdapter</string>
+    <string name="app_name">Vidhi Samagri</string>
     <string name="your_cellphone_number">Enter Cellphone Number</string>
-    <string name="phone_number_hint">8087796907</string>
+    <string name="phone_number_hint">Mobile Number</string>
     <string name="action_send_normal_sms">normal_sms</string>
-    <string name="action_send_condition_sms">condition_sms</string>
+    <string name="action_send_condition_sms">Submit Order</string>
     <string name="error_invalid_phone_number">Invalid Phone Number</string>
     <string name="permission_alert_dialog_title">Permissions Required</string>
     <string name="permission_dialog_message">Please Provide SMS Permission</string>
     <string name="action_ok">Ok</string>
-    <string name="toast_sending_sms">Sending sms....</string>
+    <string name="toast_sending_sms">Sending your order....</string>
 
     <string-array name="items_name">
-        <item>MacBook Pro</item>
-        <item>Alienware</item>
-        <item>Sony play station 4</item>
-        <item>Xbox One</item>
-        <item>Google glass</item>
-        <item>Google Nexus 6</item>
+        <item>विवाह फेरा सामग्री</item>
+        <item>लग्न पूजन सामग्री</item>
+        <item>श्री गणेश निमंत्रण पूजन सामग्री</item>
+        <item>विनायक संकड़ी पूजन सामग्री</item>
+        <item>हवन सामग्री</item>
+        <item>ग्रह प्रवेश सामग्री</item>
+        <item>यज्ञोपवीत संस्कार सामग्री</item>
+        <item>उद्यापन विशेष सामग्री</item>
+        <item>मूल शांति मे विशेष</item>
+        <item>चौला विशेष सामग्री</item>
+        <item>गंगा जी का उद्यापन</item>
     </string-array>
 
     <string-array name="item_description">
-        <item>MacBook pro with new graphics and faster flash storage.</item>
-        <item>High performance computer gaming system.</item>
-        <item>PS4 console, the most immersive gaming experience ever.</item>
-        <item>Best games, multi-player and entertainment.</item>
-        <item>Optical head mounted display</item>
-        <item>Motorolla Nexus x</item>
+        <item>विवाह फेरा सामग्री description</item>
+        <item>लग्न पूजन सामग्री description</item>
+        <item>श्री गणेश निमंत्रण पूजन सामग्री description</item>
+        <item>विनायक संकड़ी पूजन सामग्री description</item>
+        <item>हवन सामग्री description</item>
+        <item>ग्रह प्रवेश सामग्री description</item>
+        <item>यज्ञोपवीत संस्कार सामग्री description</item>
+        <item>उद्यापन विशेष सामग्री description</item>
+        <item>मूल शांति मे विशेष description</item>
+        <item>चौला विशेष सामग्री description</item>
+        <item>गंगा जी का उद्यापन description</item>
     </string-array>
 
     <string-array name="item_Details">
-        <item>MacBook pro Details</item>
-        <item>High performance computer gaming system Details.</item>
-        <item>PS4 console, the most immersive gaming experience ever Details.</item>
-        <item>Best games, multi-player and entertainment Details.</item>
-        <item>Optical head mounted display Details</item>
-        <item>Motorolla Nexus x Details</item>
+        <item>श्रीफल    5 or more\n
+मोली    1pkt\n
+रोली    50 gms\n
+सुपारी    50gms\n
+केसर    1pkt\n
+चंदन    50 gms\n
+जनेऊ    1 or more\n
+पीली सरसों    50 gms\n
+सिंदूर    50 gms\n
+सुत की कुकड़ी    1 or more\n
+लोंग    50 gms\n
+इलायची    50 gms\n
+धूप    100 gms\n
+कपूर    1 or more\n
+गुलाल 5 रंग    50 gms each\n
+अबीर    50 gms\n
+शाहद    200 gms or more\n
+खिल    1pkt\n
+खेजड़ा की लूग    \n
+काजू    100 gms\n
+बादाम की गिरी    100 gms\n
+किसमिस    100 gms\n
+छिवारा    100 gms\n
+खोपरा    1 or more\n
+मेहंदी पिसी हुई    1 or more\n
+हल्दी पिसी हुई    100 gms\n
+इत्र की शीशी    1\n
+बुरा    250 gms or more\n
+चावल    100 or more\n
+मूंग    100 or more\n
+गेहू    100 or more\n
+जौ    100 or more\n
+देसी घी    200 or more\n
+लाल वस्त्र    1mtr or more\n
+सफेद वस्त्र    1mtr or more\n
+पिला वस्त्र    1mtr or more\n
+धोती मर्दानी(gents)    1 or more\n
+गमछा    1 or more\n
+दुप्पटा    1 or more\n
+पीतल की इमारती    1 or more\n
+ताम्बे का लोटा    1 or more\n
+कांसी का कटोरा    1 or more\n
+गुड    500gms or more\n
+पताशा    500gms or more\n
+हवन पुडा    1\n
+कांसी का तपसया    1\n
+पीली मिट्टी की डाली    1\n
+पत्तल     1 or More\n
+दूना    1 or More\n
+छड़ी    1\n
+मुंज की जेवड़ी    1\n
+मुंज का छड़ा    1\n
+बांस का छल्या    1\n
+चंदवा का वस्त्र     2.5 mtr\n
+फरड़ा    4 or more\n
+रुई    50 gms\n
+माचिस    1 or more\n
+छाना    1 or more\n
+खेरी की खुटिया    1 or more\n
+तोरण    1\n
+थाम    1\n
+भूरी मिट्टी    1 or more\n
+पान डांडदार    1 or more\n
+पुष्पमाला    1 or more\n
+पुष्प खुल्ला    \n
+कलश मिट्टी    1 or more\n
+ऋतु फल    1 or more\n
+लड्डू    250 or more\n
+बर्फी    250 or more\n
+सराईं मिट्टी की    1 or More\n
+बालूडा    1 or more\n
+दूध    1 pkt\n
+दही    1 pkt\n
+पूजन की रेजगारी    1 or More\n
+</item>
+        <item>लग्न पत्रिका    1\n
+रोली    50gms\n
+मोली    1 pkt\n
+सुपारी    1 or more\n
+मूंग    100 gms\n
+पताशा    100 gms\n
+दुर्वा(grass)    1\n
+पुष्पमाला    1 or more\n
+फल    5 or more\n
+थाली    1 or More\n
+लोटा    1 or More\n
+</item>
+        <item>श्रीफल    5\n
+रोली    50gm\n
+मोली    1rool\n
+सुपारी    50gm\n
+धूप    50gms\n
+कपूर    1pkt\n
+अग्गरबति    1pkt\n
+जनेऊ जोड़ा    1 or more\n
+सिंदूर    50gms\n
+आल मजीद    \n
+हल्दी सबूत    50gms\n
+धनिया सबूत    50gms\n
+कमल गट्टा    5 or more\n
+गुड    100gms or more\n
+पताशा    100 GM's or more\n
+मूंग    50 gms\n
+इत्र की शीशी    1 bottle \n
+गणेश जी का पाना    1\n
+लाल अंगोछा ठानी बंधने हेतु    1 piece 2mtr\n
+पान लगा हुआ    1 or more\n
+पुष्प माला    1 or more\n
+पिला चावल    50gms\n
+मोतिया लड्डू    250gms\n
+</item>
+        <item>श्रीफल    5\n
+रोली    50gms\n
+मोली    1pkt\n
+सुपारी    1 or more\n
+जनेऊ    1 or more\n
+लोंग     50 gms\n
+इलायची    50gms\n
+सरसो    50gms\n
+गुड पताशा    100 gms\n
+शहद    100gms\n
+कपूर    1 or more\n
+अगरबत्ती    1pkt\n
+रुई    50 gms\n
+माचिस    1 or more\n
+राई    50 gms\n
+सबूत नामक    100 gms\n
+हल्दी की गांठ    50 gms\n
+सबूत धनिया    50 gms\n
+जौ    100 gms\n
+गेहू    100 gms\n
+चावल    100 gms\n
+मूंग    100gms\n
+लाल वस्त्र     1 mtr\n
+सफ़ेद वस्त्र    1mtr\n
+अंगौछा लाल    1 pcs\n
+चांदी का लखेल्या    \n
+लाख का लखेल्या    \n
+लोहा का लखेल्या    \n
+पीली मिट्टी की डली    1\n
+कोड़ी    1 or more\n
+देसी घी    200gms\n
+पाटा चोपड़ा    \n
+पत्तल     5 or more\n
+दोना    20 or more\n
+विनायक जी का पाना    1\n
+पान डाड़दार    5 or more\n
+पुष्प माला    1 or more\n
+दूर्वा    \n
+मिट्टी का कलश    1 or more\n
+सराईया    5 or More\n
+थाली    1 or More\n
+लोटा    1 or More\n
+कटोरी    1 or More\n
+मोतिया लड्डू    250gms\n
+बर्फी    250 gms\n
+ऋतूफल    5 or more\n
+</item>
+        <item>पीपल खेजड़ा    \n
+छान(कंडे)    \n
+नवग्रह समिधा     \n
+लाल चंदन बुरादा(powder)    \n
+सफेद चंदन बुरादा(powder)    \n
+जटामासी    \n
+नागरमोध    \n
+कमल गट्टा    \n
+इन्द्र जौ    \n
+भोज पत्र    \n
+अगर जगर    \n
+तगर    \n
+देवद्वार    \n
+बील गिरी    \n
+दारू हल्दी    \n
+कपूर कचरी    \n
+गूगल    \n
+लोबान    \n
+विजय(भाग)    \n
+सूत की कुकड़ी    \n
+सफ़ेद तिल    \n
+गुलाब जल    \n
+केवड़ा जल    \n
+गन्ने का रस    \n
+बील का रस    \n
+धतूरा की माला    \n
+खस का रस(इत्र)    \n
+बिल्ब पत्र    \n
+जलहरी का सस्त्र    \n
+टिकटी    \n
+</item>
+        <item>सप्त धान    \n
+पचरंग धागा    \n
+नागफणी का काटा    \n
+काच की लालटेन     \n
+पंचरंगा झंड़ा    \n
+वास्तु की मूर्ति    \n
+झंडी 10 रंग की    \n
+कागज की झंडी    \n
+आशापाला की बाँदारवाल    \n
+कच्ची हांडी    \n
+</item>
+        <item>मृग छाला    \n
+मुंज की जेवड़ी    \n
+गायत्री की फ़ोटो    \n
+गूलर की लकड़ी    \n
+पवाड़ी की जोड़ी    \n
+पाटी पेंसिल    \n
+छिला का डांड    \n
+पीताम्बरी (धोती)    \n
+दुप्पटा पिला    \n
+बास की कामडी    \n
+कागज की झंडी    \n
+बांदरवाल    \n
+
+        </item>
+        <item>लोटा    \n
+जनेऊ    \n
+ब्लाउज पिस    \n
+
+        </item>
+        <item>
+            लोटा    \n
+जनेऊ    \n
+तुलसी माला    \n
+सफ़ेद वस्त्र    \n
+लाल वस्त्र    \n
+सत्यनारायण जी की फ़ोटो    \n
+        </item>
+        <item>
+            सिंदुर    \n
+चमेली के तेल    \n
+इत्र की शीशी    \n
+जायफल    \n
+अग्गरबति    \n
+कपूर    \n
+धूप    \n
+पुष्पमाला    \n
+रोली    \n
+मोली    \n
+सुपारी    \n
+लोंग    \n
+वर्क चांदी का    \n
+जनेऊ जोड़ा    \n
+        </item>
+        <item>
+            बेस(साड़ी)    \n
+ब्लाउज(blouse)    \n
+सुहाग सामग्री    \n
+other    \n
+
+        </item>
     </string-array>
 </resources>
