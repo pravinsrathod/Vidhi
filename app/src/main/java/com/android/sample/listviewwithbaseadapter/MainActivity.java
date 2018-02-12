@@ -11,11 +11,14 @@ import android.widget.Toast;
 
 import com.android.sample.listviewwithbaseadapter.adapter.CustomListAdapter;
 import com.android.sample.listviewwithbaseadapter.model.Item;
+import com.android.sample.listviewwithbaseadapter.model.ListPojo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<Item> list = new ArrayList<>();
+    ArrayList<String> arrData= new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +33,17 @@ public class MainActivity extends AppCompatActivity {
         //set custom adapter as adapter to our list view
         itemsListView.setAdapter(adapter);
 
+
         itemsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
                // String item = ((TextView)view).getText().toString();
-
+                arrData= new ArrayList<>();
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-                intent.putExtra("message", list.get(position).getItemDetails());
+                Collections.addAll(arrData, list.get(position).getItemDetails().split("\n"));
+                intent.putExtra("message", arrData);
                 startActivity(intent);
 
             //    Toast.makeText(getApplicationContext(), "Item " + (position + 1) + ": " + list.get(position).getItemDescription(), Toast.LENGTH_LONG).show();

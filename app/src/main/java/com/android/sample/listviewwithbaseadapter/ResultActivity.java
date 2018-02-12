@@ -14,8 +14,14 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.sample.listviewwithbaseadapter.adapter.SecondAdapter;
+import com.android.sample.listviewwithbaseadapter.model.ListPojo;
+
+import java.util.ArrayList;
 
 /**
  * Created by KIT927 on 1/17/2018.
@@ -26,20 +32,37 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
     private static final String TAG = "MainActivity";
     private static final String PREF_USER_MOBILE_PHONE = "pref_user_mobile_phone";
     private static final int SMS_PERMISSION_CODE = 0;
+    private ArrayList<ListPojo> arrlistpojo= new ArrayList<>();
 
     private EditText mNumberEditText;
     private String mUserMobilePhone;
     private SharedPreferences mSharedPreferences;
+    private ArrayList<String> arr = new ArrayList<>();
+    private ListView lv;
+    private SecondAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         Bundle bundle = getIntent().getExtras();
-        String message = bundle.getString("message");
-        smsToSend=message;
-        TextView txtView = (TextView) findViewById(R.id.text_view_item_name_result);
-        txtView.setText(message);
+        lv= (ListView) findViewById(R.id.lv);
+        arr =  bundle.getStringArrayList("message");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                getDataIntoPojot(arr);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        adapter= new SecondAdapter(ResultActivity.this,arrlistpojo);
+                        lv.setAdapter(adapter);
+                    }
+                });
+            }
+        }).start();
+
+//        TextView txtView = (TextView) findViewById(R.id.text_view_item_name_result);
 
         if (!hasReadSmsPermission()) {
             showRequestPermissionsInfoAlertDialog();
@@ -50,6 +73,18 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         mUserMobilePhone = mSharedPreferences.getString(PREF_USER_MOBILE_PHONE, "");
         if (!TextUtils.isEmpty(mUserMobilePhone)) {
             mNumberEditText.setText(mUserMobilePhone);
+        }
+    }
+
+    private void getDataIntoPojot(ArrayList<String> arr) {
+
+        ListPojo list;
+        for(int i=0;i<arr.size();i++)
+        {
+            list= new ListPojo();
+            list.setItemName(arr.get(i));
+            list.setQty(0);
+            arrlistpojo.add(list);
         }
     }
 
